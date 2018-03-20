@@ -1,0 +1,49 @@
+{
+    "name": "jungle-bay/symfony-debug-extension",
+    "description": "Symfony Debug Component Extension",
+    "type": "library",
+    "keywords": [
+        "php"
+    ],
+    "homepage": "https://github.com/jungle-bay/symfony-debug-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roma Baranenko",
+            "email": "jungle.romabb8@gmail.com",
+            "role": "Lead Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/jungle-bay/symfony-debug-extension/issues/"
+    },
+    "require": {
+        "php": ">=5.5",
+        "symfony/debug": "^3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Symfony\\Component\\Debug\\Extension\\": "src/Symfony/Component/Debug/Extension/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Symfony\\Component\\Debug\\Extension\\Tests\\": "tests/Symfony/Component/Debug/Extension/Tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --bootstrap vendor/autoload.php --filter",
+        "tests": "phpunit --bootstrap vendor/autoload.php tests"
+    },
+    "archive": {
+        "exclude": [
+            "*",
+            ".*",
+            "!src/*",
+            "!composer.json"
+        ]
+    }
+}
