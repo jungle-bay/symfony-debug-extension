@@ -16,13 +16,13 @@
 
     <testsuites>
         <testsuite name="Error Handler Test Suite">
-            <directory>tests/ErrorHandler/Tests/</directory>
+            <directory>tests/Symfony/Component/Debug/Extension/Tests/</directory>
         </testsuite>
     </testsuites>
 
     <filter>
         <whitelist>
-            <directory suffix=".php">src/ErrorHandler/</directory>
+            <directory suffix=".php">src/Symfony/Component/Debug/Extension/</directory>
         </whitelist>
     </filter>
 

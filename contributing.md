@@ -1,8 +1,8 @@
-# Contributing for Exception Handle
+# Contributing for Symfony Debug Extension
 
 Contributions are **welcome** and will be fully **credited**.
 
-We accept contributions via Pull Requests on [Github](https://github.com/jungle-bay/error-handler/pulls).
+We accept contributions via Pull Requests on [Github](https://github.com/jungle-bay/symfony-debug-extension/pulls).
 
 #### Pull Requests
 
