@@ -8,20 +8,20 @@
  * Time: 18:46
  */
 
-namespace ErrorHandler;
+namespace Symfony\Component\Debug\Extension;
 
 
 use Exception;
-use ErrorHandler\Strategies\BaseStrategy;
-use ErrorHandler\Strategies\SerialStrategy;
-use ErrorHandler\Api\ErrorHandlerInterface;
 use Symfony\Component\Debug\BufferingLogger;
-use ErrorHandler\Exceptions\ErrorHandlerException;
 use Symfony\Component\Debug\ErrorHandler as BaseErrorHandler;
+use Symfony\Component\Debug\Extension\Strategies\BaseStrategy;
+use Symfony\Component\Debug\Extension\Strategies\SerialStrategy;
+use Symfony\Component\Debug\Extension\Api\ErrorHandlerInterface;
+use Symfony\Component\Debug\Extension\Exceptions\ErrorHandlerException;
 
 /**
  * Class ErrorHandler
- * @package ErrorHandler
+ * @package Symfony\Component\Debug\Extension
  */
 class ErrorHandler extends BaseErrorHandler {
 
@@ -51,8 +51,8 @@ class ErrorHandler extends BaseErrorHandler {
 
     /**
      * @param ErrorHandlerInterface $errorHandler
-     * @param string $type Full class name exception, example: Exception::class
-     * @return int Count registered handlers
+     * @param string $type
+     * @return int
      * @throws ErrorHandlerException
      */
     public function registerHandler(ErrorHandlerInterface $errorHandler, $type = '') {

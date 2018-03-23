@@ -6,16 +6,16 @@
  * Time: 9:36
  */
 
-namespace ErrorHandler\Strategies;
+namespace Symfony\Component\Debug\Extension\Strategies;
 
 
 use Exception;
-use ErrorHandler\Api\ErrorHandlerInterface;
-use ErrorHandler\Exceptions\ErrorHandlerException;
+use Symfony\Component\Debug\Extension\Api\ErrorHandlerInterface;
+use Symfony\Component\Debug\Extension\Exceptions\ErrorHandlerException;
 
 /**
  * Class SimpleStrategy
- * @package ErrorHandler\Strategies
+ * @package Symfony\Component\Debug\Extension\Strategies
  */
 class SimpleStrategy extends BaseStrategy {
 
@@ -38,7 +38,7 @@ class SimpleStrategy extends BaseStrategy {
      * @param Exception $exception
      * @return bool
      */
-    protected function run($type, $exception) {
+    protected function run($type, Exception $exception) {
 
         if (false === array_key_exists($type, $this->handlers)) return false;
 

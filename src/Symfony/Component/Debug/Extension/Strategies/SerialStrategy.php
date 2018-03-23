@@ -6,14 +6,14 @@
  * Time: 23:01
  */
 
-namespace ErrorHandler\Strategies;
+namespace Symfony\Component\Debug\Extension\Strategies;
 
 
 use Exception;
 
 /**
  * Class SerialStrategy
- * @package ErrorHandler\Strategies
+ * @package Symfony\Component\Debug\Extension\Strategies
  */
 class SerialStrategy extends BaseStrategy {
 

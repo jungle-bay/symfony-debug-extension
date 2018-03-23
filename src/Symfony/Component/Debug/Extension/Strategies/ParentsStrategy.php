@@ -6,14 +6,14 @@
  * Time: 23:02
  */
 
-namespace ErrorHandler\Strategies;
+namespace Symfony\Component\Debug\Extension\Strategies;
 
 
 use Exception;
 
 /**
  * Class ParentsStrategy
- * @package ErrorHandler\Strategies
+ * @package Symfony\Component\Debug\Extension\Strategies
  */
 class ParentsStrategy extends SimpleStrategy {
 

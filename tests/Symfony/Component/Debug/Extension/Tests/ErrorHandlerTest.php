@@ -6,36 +6,34 @@
  * Time: 22:00
  */
 
-namespace ErrorHandler\Tests;
+namespace Symfony\Component\Debug\Extension\Tests;
 
 
-use Exception;
-use InvalidArgumentException;
-use ErrorHandler\ErrorHandler;
+use RuntimeException;
 use PHPUnit\Framework\TestCase;
-use ErrorHandler\Strategies\SerialStrategy;
-use ErrorHandler\Tests\Handlers\ExceptionHandler;
-use ErrorHandler\Tests\Handlers\RuntimeExceptionHandler;
-use ErrorHandler\Tests\Handlers\InvalidArgumentExceptionHandler;
+use Symfony\Component\Debug\Extension\ErrorHandler;
+use Symfony\Component\Debug\Extension\Tests\Handlers\ExceptionHandler;
+use Symfony\Component\Debug\Extension\Exceptions\ErrorHandlerException;
+use Symfony\Component\Debug\Extension\Tests\Handlers\RuntimeExceptionHandler;
+use Symfony\Component\Debug\Extension\Tests\Handlers\InvalidArgumentExceptionHandler;
 
 /**
  * Class ErrorHandlerTest
- * @package ErrorHandler\Tests
+ * @package Symfony\Component\Debug\Extension\Tests
  */
 class ErrorHandlerTest extends TestCase {
 
     /**
-     * @throws Exception
+     * @throws ErrorHandlerException
      */
     public function testHandle() {
 
-        $errorHandler = new ErrorHandler(new SerialStrategy());
-        $errorHandler = ErrorHandler::registerExtension($errorHandler);
+        $errorHandler = ErrorHandler::registerExtension();
 
         $errorHandler->registerHandler(new ExceptionHandler());
         $errorHandler->registerHandler(new RuntimeExceptionHandler());
         $errorHandler->registerHandler(new InvalidArgumentExceptionHandler());
 
-        $errorHandler->handle(new InvalidArgumentException('Hello world.'));
+        $errorHandler->handle(new RuntimeException('Hello world.'));
     }
 }

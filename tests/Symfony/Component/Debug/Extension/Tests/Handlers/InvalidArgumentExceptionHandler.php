@@ -6,15 +6,15 @@
  * Time: 1:06
  */
 
-namespace ErrorHandler\Tests\Handlers;
+namespace Symfony\Component\Debug\Extension\Tests\Handlers;
 
 
 use Exception;
-use ErrorHandler\Api\ErrorHandlerInterface;
+use Symfony\Component\Debug\Extension\Api\ErrorHandlerInterface;
 
 /**
  * Class InvalidArgumentExceptionHandler
- * @package ErrorHandler\Tests\Handlers
+ * @package Symfony\Component\Debug\Extension\Tests\Handlers
  */
 class InvalidArgumentExceptionHandler implements ErrorHandlerInterface {
 
