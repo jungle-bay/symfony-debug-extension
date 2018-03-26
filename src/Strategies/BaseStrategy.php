@@ -41,7 +41,7 @@ abstract class BaseStrategy {
 
     /**
      * @param Exception $exception
-     * @return bool Did you manage to process the error.
+     * @return bool Did you manage to process the error
      */
     abstract public function handle(Exception $exception);
 }

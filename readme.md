@@ -33,7 +33,7 @@ composer require jungle-bay/symfony-debug-extension
 
 require_once __DIR__ . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, array('vendor', 'autoload.php'));
 
-$errorHandler = \ErrorHandler\ErrorHandler::registerExtension();
+$errorHandler = \Symfony\Component\Debug\Extension\ErrorHandler::registerExtension();
 
 $errorHandler->registerHandler(new \Acme\Handlers\ExceptionHandler());
 

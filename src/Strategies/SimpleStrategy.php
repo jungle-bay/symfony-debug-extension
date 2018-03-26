@@ -38,7 +38,7 @@ class SimpleStrategy extends BaseStrategy {
      * @param Exception $exception
      * @return bool
      */
-    protected function run($type, $exception) {
+    protected function run($type, Exception $exception) {
 
         if (false === array_key_exists($type, $this->handlers)) return false;
 

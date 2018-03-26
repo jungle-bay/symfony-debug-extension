@@ -21,7 +21,7 @@ use Symfony\Component\Debug\Extension\Exceptions\ErrorHandlerException;
 
 /**
  * Class ErrorHandler
- * @package Symfony\Component\Debug\Extension\ErrorHandler
+ * @package Symfony\Component\Debug\Extension
  */
 class ErrorHandler extends BaseErrorHandler {
 
@@ -51,8 +51,8 @@ class ErrorHandler extends BaseErrorHandler {
 
     /**
      * @param ErrorHandlerInterface $errorHandler
-     * @param string $type Full class name exception, example: Exception::class
-     * @return int Count registered handlers
+     * @param string $type
+     * @return int
      * @throws ErrorHandlerException
      */
     public function registerHandler(ErrorHandlerInterface $errorHandler, $type = '') {
