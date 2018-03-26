@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Symfony\\Component\\Debug\\Extension\\": "src/Symfony/Component/Debug/Extension/"
+            "Symfony\\Component\\Debug\\Extension\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Symfony\\Component\\Debug\\Extension\\Tests\\": "tests/Symfony/Component/Debug/Extension/Tests/"
+            "Symfony\\Component\\Debug\\Extension\\Tests\\": "tests/"
         }
     },
     "scripts": {

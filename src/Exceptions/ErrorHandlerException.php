@@ -6,14 +6,14 @@
  * Time: 23:27
  */
 
-namespace ErrorHandler\Exceptions;
+namespace Symfony\Component\Debug\Extension\Exceptions;
 
 
 use Exception;
 
 /**
  * Class ErrorHandlerException
- * @package ErrorHandler\Exceptions
+ * @package Symfony\Component\Debug\Extension\Exceptions
  */
 class ErrorHandlerException extends Exception {
 

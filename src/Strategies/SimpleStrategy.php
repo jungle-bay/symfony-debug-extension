@@ -6,16 +6,16 @@
  * Time: 9:36
  */
 
-namespace ErrorHandler\Strategies;
+namespace Symfony\Component\Debug\Extension\Strategies;
 
 
 use Exception;
-use ErrorHandler\Api\ErrorHandlerInterface;
-use ErrorHandler\Exceptions\ErrorHandlerException;
+use Symfony\Component\Debug\Extension\Api\ErrorHandlerInterface;
+use Symfony\Component\Debug\Extension\Exceptions\ErrorHandlerException;
 
 /**
  * Class SimpleStrategy
- * @package ErrorHandler\Strategies
+ * @package Symfony\Component\Debug\Extension\Strategies
  */
 class SimpleStrategy extends BaseStrategy {
 

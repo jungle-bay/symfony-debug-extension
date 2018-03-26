@@ -16,13 +16,13 @@
 
     <testsuites>
         <testsuite name="Error Handler Test Suite">
-            <directory>tests/ErrorHandler/Tests/</directory>
+            <directory>tests/</directory>
         </testsuite>
     </testsuites>
 
     <filter>
         <whitelist>
-            <directory suffix=".php">src/ErrorHandler/</directory>
+            <directory suffix=".php">src/</directory>
         </whitelist>
     </filter>
 

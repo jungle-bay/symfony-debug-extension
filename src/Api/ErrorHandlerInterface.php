@@ -6,14 +6,14 @@
  * Time: 23:20
  */
 
-namespace ErrorHandler\Api;
+namespace Symfony\Component\Debug\Extension\Api;
 
 
 use Exception;
 
 /**
  * Interface ErrorHandlerInterface
- * @package ErrorHandler\Api
+ * @package Symfony\Component\Debug\Extension\Api
  */
 interface ErrorHandlerInterface {
 

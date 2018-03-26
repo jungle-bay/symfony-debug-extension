@@ -6,21 +6,21 @@
  * Time: 22:00
  */
 
-namespace ErrorHandler\Tests;
+namespace Symfony\Component\Debug\Extension\Tests;
 
 
 use Exception;
 use InvalidArgumentException;
-use ErrorHandler\ErrorHandler;
 use PHPUnit\Framework\TestCase;
-use ErrorHandler\Strategies\SerialStrategy;
-use ErrorHandler\Tests\Handlers\ExceptionHandler;
-use ErrorHandler\Tests\Handlers\RuntimeExceptionHandler;
-use ErrorHandler\Tests\Handlers\InvalidArgumentExceptionHandler;
+use Symfony\Component\Debug\Extension\ErrorHandler;
+use Symfony\Component\Debug\Extension\Strategies\SerialStrategy;
+use Symfony\Component\Debug\Extension\Tests\Handlers\ExceptionHandler;
+use Symfony\Component\Debug\Extension\Tests\Handlers\RuntimeExceptionHandler;
+use Symfony\Component\Debug\Extension\Tests\Handlers\InvalidArgumentExceptionHandler;
 
 /**
  * Class ErrorHandlerTest
- * @package ErrorHandler\Tests
+ * @package Symfony\Component\Debug\Extension\Tests
  */
 class ErrorHandlerTest extends TestCase {
 
