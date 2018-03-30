@@ -28,7 +28,9 @@ class SimpleStrategy extends BaseStrategy {
 
         $type = get_class($exception);
 
-        if (false === $type) throw new ErrorHandlerException('It is impossible to determine the error type.');
+        if (false === $type) {
+            throw new ErrorHandlerException('It is impossible to determine the error type.');
+        }
 
         return $type;
     }
@@ -40,7 +42,9 @@ class SimpleStrategy extends BaseStrategy {
      */
     protected function run($type, Exception $exception) {
 
-        if (false === array_key_exists($type, $this->handlers)) return false;
+        if (false === array_key_exists($type, $this->handlers)) {
+            return false;
+        }
 
         /** @var ErrorHandlerInterface $handler */
         $handler = $this->handlers[$type];
@@ -51,6 +55,7 @@ class SimpleStrategy extends BaseStrategy {
 
     /**
      * {@inheritdoc}
+     * @throws ErrorHandlerException
      */
     public function handle(Exception $exception) {
 

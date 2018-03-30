@@ -31,7 +31,9 @@ abstract class BaseStrategy {
      */
     public function registerHandler(ErrorHandlerInterface $errorHandler, $type = '') {
 
-        if ('' === $type) return array_push($this->handlers, $errorHandler);
+        if ('' === $type) {
+            return array_push($this->handlers, $errorHandler);
+        }
 
         $this->handlers[$type] = $errorHandler;
 

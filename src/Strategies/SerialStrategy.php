@@ -26,7 +26,9 @@ class SerialStrategy extends BaseStrategy {
 
             $isProcessed = $handler->handle($exception);
 
-            if (false === $isProcessed) continue;
+            if (false === $isProcessed) {
+                continue;
+            }
 
             return true;
         }

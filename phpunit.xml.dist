@@ -15,7 +15,7 @@
          verbose="false">
 
     <testsuites>
-        <testsuite name="Error Handler Test Suite">
+        <testsuite name="Symfony Debug Component Extension Test Suite">
             <directory>tests/</directory>
         </testsuite>
     </testsuites>

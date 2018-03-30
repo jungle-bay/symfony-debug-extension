@@ -37,7 +37,9 @@ class ErrorHandler extends BaseErrorHandler {
      */
     public function getStrategy() {
 
-        if (null === $this->strategy) throw new ErrorHandlerException('Error handler strategy undefined.');
+        if (null === $this->strategy) {
+            throw new ErrorHandlerException('Error handler strategy undefined.');
+        }
 
         return $this->strategy;
     }

@@ -25,11 +25,15 @@ class ParentsStrategy extends SimpleStrategy {
 
         $parents = class_parents($exception);
 
-        if (false === $parents) return array();
+        if (false === $parents) {
+            return array();
+        }
 
         $parents = array_keys($parents);
 
-        if (null === $parents) return array();
+        if (null === $parents) {
+            return array();
+        }
 
         return array_reverse($parents);
     }
@@ -47,7 +51,9 @@ class ParentsStrategy extends SimpleStrategy {
 
             $isProcessed = $this->run($parent, $exception);
 
-            if (true === $isProcessed) break;
+            if (true === $isProcessed) {
+                break;
+            }
         }
 
         return $this->run($type, $exception);
